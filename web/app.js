@@ -23,8 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
 app.get('/tanaya', (req, res) => {
-  console.log("working!!");
-  res.send("Hello Tanaya!");
+  console.log('working!!')
+  res.send('Hello Tanaya!')
 });
 
 
