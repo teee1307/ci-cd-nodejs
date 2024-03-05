@@ -4,7 +4,6 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 
-
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
 
@@ -25,8 +24,7 @@ app.use('/users', usersRouter)
 app.get('/tanaya', (req, res) => {
   console.log('working!!')
   res.send('Hello Tanaya!')
-});
-
+})
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
